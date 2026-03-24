@@ -6,7 +6,7 @@ import { ChevronDown } from "lucide-react"
 const plans = [
   {
     id: "starting",
-    name: "스타팅 패키지",
+    name: "스타팅 플랜",
     subtitle: "혼자 시작하는 구조 세팅",
     price: "100만 원",
     features: [
@@ -20,7 +20,7 @@ const plans = [
   },
   {
     id: "standard",
-    name: "스탠다드 패키지",
+    name: "부스트 플랜",
     subtitle: "브랜드 SNS 체계 구축",
     price: "320만 원",
     overview: "총 8회 · 2개월 과정 / 주 1회 · 1시간 실시간 피드백 세션",
@@ -99,11 +99,11 @@ const plans = [
   },
   {
     id: "premium",
-    name: "프리미엄",
+    name: "프리미엄 플랜",
     subtitle: "매출 전환 밀착 관리",
     price: "1,000만 원",
     features: [
-      "스타팅 패키지 + 스탠다드 패키지 전체 포함",
+      "스타팅 플랜 + 부스트 플랜 전체 포함",
       "3개월 콘텐츠 플랜 기획",
       "3개월 주차별 피드백 진행",
       "월 별 맞춤 컨설팅",
@@ -304,7 +304,7 @@ export function PricingSection() {
             Bonus
           </p>
           <p className="text-lg font-bold text-secondary-foreground md:text-xl">
-            {"스탠다드 · 프리미엄 플랜 선택 시"}
+            {"부스트 · 프리미엄 플랜 선택 시"}
           </p>
           <p className="mt-2 text-sm text-muted-foreground">
             {"+ 90만 원 상당 실전 AI / 비즈니스 툴 패키지 제공"}
