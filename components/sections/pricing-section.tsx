@@ -104,13 +104,57 @@ const plans = [
     price: "1,000만 원",
     features: [
       "스타팅 플랜 + 부스트 플랜 전체 포함",
-      "3개월 콘텐츠 플랜 기획",
-      "3개월 주차별 피드백 진행",
-      "월 별 맞춤 컨설팅",
-      "24시간 전담 지원",
-      "개인 페이지 기획",
-      "개인 상품 구축 및 홍보전략",
-      "프리미엄 네트워킹 우선 초대",
+      "3개월 매출 구조 설계 & 실행 로드맵 구축",
+      "개인 브랜딩 포지셔닝 & 메시지 설계",
+      "콘텐츠 → 전환 → 판매 흐름 설계",
+    ],
+    categories: [
+      {
+        title: "핵심 전략 & 시스템 구축",
+        emoji: "🧠",
+        items: [
+          "스타팅 플랜 + 부스트 플랜 전체 포함",
+          "3개월 매출 구조 설계 & 실행 로드맵 구축",
+          "개인 브랜딩 포지셔닝 & 메시지 설계",
+          "콘텐츠 → 전환 → 판매 흐름 설계",
+        ],
+      },
+      {
+        title: "실행 & 밀착 디렉팅",
+        emoji: "🚀",
+        items: [
+          "3개월 콘텐츠 플랜 기획 (주차별)",
+          "주 1회 밀착 피드백 & 방향 수정",
+          "콘텐츠 구조 / 훅 / 메시지 직접 디렉팅",
+          "업로드 전 콘텐츠 우선 검수",
+        ],
+      },
+      {
+        title: "수익화 & 확장",
+        emoji: "💰",
+        items: [
+          "개인 상품 기획 및 구조 설계",
+          "세일즈 흐름 & 전환 전략 구축",
+          "개인 페이지(프로필/랜딩) 설계",
+        ],
+      },
+      {
+        title: "운영 지원 & 환경 세팅",
+        emoji: "📡",
+        items: [
+          "24시간 커뮤니케이션 지원",
+          "실행 중 발생하는 문제 실시간 대응",
+          "지속 가능한 콘텐츠 운영 시스템 정착",
+        ],
+      },
+      {
+        title: "프리미엄 혜택",
+        emoji: "🎟️",
+        items: [
+          "프리미엄 네트워킹 우선 초대",
+          "고급 인사이트 및 확장 기회 제공",
+        ],
+      },
     ],
     highlight: false,
   },
@@ -195,18 +239,42 @@ export function PricingSection() {
                       </p>
                     )}
 
-                    {/* Features */}
-                    <ul className="space-y-4">
-                      {plan.features.map((feature, index) => (
-                        <li
-                          key={index}
-                          className="flex items-start gap-2 text-sm leading-relaxed"
-                        >
-                          <span className="opacity-60">-</span>
-                          <span className="opacity-80">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    {/* Standard/Boost Features List (Hidden if categories exist for Premium) */}
+                    {!("categories" in plan) && (
+                      <ul className="space-y-4">
+                        {plan.features.map((feature, index) => (
+                          <li
+                            key={index}
+                            className="flex items-start gap-2 text-sm leading-relaxed"
+                          >
+                            <span className="opacity-60">-</span>
+                            <span className="opacity-80">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+
+                    {/* Premium Categories rendering */}
+                    {"categories" in plan && plan.categories && (
+                      <div className="space-y-8">
+                        {(plan.categories as any[]).map((category, cIdx) => (
+                          <div key={cIdx} className="space-y-3">
+                            <div className="flex items-center gap-2">
+                              <span className="text-lg">{category.emoji}</span>
+                              <h4 className="text-sm font-bold opacity-90">{category.title}</h4>
+                            </div>
+                            <ul className="space-y-1.5 pl-7">
+                              {category.items.map((item: string, iIdx: number) => (
+                                <li key={iIdx} className="flex items-start gap-2 text-xs leading-relaxed opacity-60">
+                                  <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary-foreground/50" />
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    )}
 
                     {/* Detailed Curriculum (Standard only) */}
                     {"curriculum" in plan && plan.curriculum && (
