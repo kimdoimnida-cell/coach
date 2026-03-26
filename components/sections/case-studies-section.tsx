@@ -40,7 +40,7 @@ const caseStudies: CaseStudy[] = [
   {
     category: "CASE 02 — 식품 브랜드",
     quote:
-      "광고비를 3억에서 6천 만원으로 줄였는데, 매출은 동일해요. SNS 덕분입니다.",
+      "광고비를 5억에서 5천 만원으로 줄였는데, 매출은 증가했어요. SNS 덕분입니다.",
     rows: [
       {
         label: "브랜드 컨셉",
@@ -55,7 +55,7 @@ const caseStudies: CaseStudy[] = [
       {
         label: "매출·전환",
         before: "SNS 기반 매출 거의 없음",
-        after: "콘텐츠 10개로 주문 폭주 → 조기 품절 → 매출 2배 상승",
+        after: "콘텐츠 10개로 주문 폭주 → 조기 품절 → 3억 매출 발생",
       },
     ],
   },
