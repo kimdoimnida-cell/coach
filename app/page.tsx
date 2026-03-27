@@ -4,6 +4,7 @@ import { PainPointsSection } from "@/components/sections/pain-points-section"
 import { ProblemSection } from "@/components/sections/problem-section"
 import { SolutionSection } from "@/components/sections/solution-section"
 import { CaseStudiesSection } from "@/components/sections/case-studies-section"
+import { TestimonialScroller } from "@/components/sections/testimonial-scroller"
 import { PricingSection } from "@/components/sections/pricing-section"
 import { CtaSection } from "@/components/sections/cta-section"
 import { FloatingCta } from "@/components/sections/floating-cta"
@@ -16,6 +17,7 @@ export default function Page() {
       <ProblemSection />
       <SolutionSection />
       <CaseStudiesSection />
+      <TestimonialScroller />
       <PricingSection />
       <CtaSection />
       <footer className="bg-primary px-6 py-12 text-center">
