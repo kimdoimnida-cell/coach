@@ -6,7 +6,7 @@ export function CtaSection() {
   return (
     <section
       id="cta-section"
-      className="bg-primary px-6 py-24 text-primary-foreground md:py-32"
+      className="bg-white px-6 py-24 text-slate-900 md:py-32 border-t border-border"
     >
       <div className="mx-auto max-w-3xl text-center">
         <p className="mb-4 text-sm font-medium tracking-[0.2em] uppercase text-brand">
@@ -24,7 +24,7 @@ export function CtaSection() {
           href="http://pf.kakao.com/_lxkxjXG"
           target="_blank"
           rel="noopener noreferrer"
-          className="group inline-flex items-center gap-3 bg-brand px-10 py-5 text-base font-medium tracking-wider text-white transition-all hover:opacity-90"
+          className="group inline-flex items-center gap-3 bg-brand px-10 py-5 text-base font-medium tracking-wider text-white transition-all hover:opacity-90 shadow-lg hover:shadow-xl"
         >
           {'지금 문의하기'}
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

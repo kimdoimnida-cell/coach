@@ -190,10 +190,10 @@ export function PricingSection() {
             return (
               <div
                 key={plan.id}
-                className={`relative flex flex-col overflow-hidden rounded-2xl transition-all ${
+                className={`relative flex flex-col overflow-hidden rounded-2xl transition-all shadow-xl ${
                   plan.highlight
-                    ? "bg-primary text-primary-foreground ring-2 ring-brand"
-                    : "bg-primary text-primary-foreground"
+                    ? "bg-white text-slate-900 ring-2 ring-brand"
+                    : "bg-white text-slate-900"
                 }`}
               >
                 {/* Recommended Badge */}
@@ -231,7 +231,7 @@ export function PricingSection() {
                     isExpanded ? "max-h-[3000px] opacity-100" : "max-h-0 opacity-0"
                   }`}
                 >
-                  <div className="border-t border-primary-foreground/10 p-8 pt-6">
+                  <div className="border-t border-slate-200 p-8 pt-6">
                     {/* Overview (Standard) */}
                     {"overview" in plan && plan.overview && (
                       <p className="mb-6 text-sm font-medium opacity-60">
@@ -278,7 +278,7 @@ export function PricingSection() {
 
                     {/* Detailed Curriculum (Standard only) */}
                     {"curriculum" in plan && plan.curriculum && (
-                      <div className="mt-8 border-t border-primary-foreground/10 pt-6">
+                      <div className="mt-8 border-t border-slate-200 pt-6">
                         <p className="mb-6 text-xs font-medium tracking-wider uppercase text-brand">
                           상세 커리큘럼
                         </p>
@@ -346,16 +346,16 @@ export function PricingSection() {
 
                     {/* CTA Button */}
                     <div className="mt-8">
-                      <a
-                        href="http://pf.kakao.com/_lxkxjXG"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`block w-full py-4 text-center text-sm font-medium tracking-wider transition-all ${
-                          plan.highlight
-                            ? "bg-brand text-white hover:opacity-90"
-                            : "bg-primary-foreground text-primary hover:opacity-90"
-                        }`}
-                      >
+                        <a
+                          href="http://pf.kakao.com/_lxkxjXG"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`block w-full py-4 text-center text-sm font-medium tracking-wider transition-all rounded-lg ${
+                            plan.highlight
+                              ? "bg-brand text-white hover:opacity-90"
+                              : "bg-slate-900 text-white hover:bg-slate-800"
+                          }`}
+                        >
                         상담 신청하기
                       </a>
                     </div>
