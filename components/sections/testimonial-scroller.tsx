@@ -28,13 +28,13 @@ export function TestimonialScroller() {
   const doubledTestimonials = [...testimonials, ...testimonials]
 
   return (
-    <section className="bg-primary py-12 overflow-hidden">
+    <section className="bg-white py-12 overflow-hidden border-y border-border">
       <div className="mx-auto max-w-7xl px-6 mb-8">
          <p className="text-sm font-medium tracking-[0.2em] uppercase text-brand mb-2">
           REVIEWS
         </p>
-        <h3 className="text-2xl font-bold text-primary-foreground md:text-3xl">
-          실제 코칭 수강생 후기
+        <h3 className="text-2xl font-bold text-slate-900 md:text-3xl">
+          실제 후기
         </h3>
       </div>
       

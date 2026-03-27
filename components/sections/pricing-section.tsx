@@ -168,16 +168,16 @@ export function PricingSection() {
   }
 
   return (
-    <section className="bg-background px-6 py-24 md:py-32">
+    <section className="bg-primary px-6 py-24 text-primary-foreground md:py-32">
       <div className="mx-auto max-w-6xl">
         <div className="mb-16 text-center">
           <p className="mb-4 text-sm font-medium tracking-[0.2em] uppercase text-brand">
             Pricing Plans
           </p>
-          <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tight text-foreground md:text-4xl">
+          <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tight md:text-4xl">
             {"나에게 맞는 플랜 선택하기"}
           </h2>
-          <p className="mx-auto max-w-xl text-base leading-relaxed text-muted-foreground">
+          <p className="mx-auto max-w-xl text-base leading-relaxed opacity-60">
             {"브랜드 상황과 목표에 맞는 플랜을 선택하세요"}
           </p>
         </div>
@@ -367,14 +367,14 @@ export function PricingSection() {
         </div>
 
         {/* Bonus Note */}
-        <div className="mt-12 border border-border bg-secondary p-8 text-center">
+        <div className="mt-12 border border-primary-foreground/10 bg-primary-foreground/5 p-8 text-center">
           <p className="mb-2 text-xs font-medium tracking-wider uppercase text-brand">
             Bonus
           </p>
-          <p className="text-lg font-bold text-secondary-foreground md:text-xl">
+          <p className="text-lg font-bold md:text-xl">
             {"부스트 · 프리미엄 플랜 선택 시"}
           </p>
-          <p className="mt-2 text-sm text-muted-foreground">
+          <p className="mt-2 text-sm opacity-60">
             {"+ 90만 원 상당 실전 AI / 비즈니스 툴 패키지 제공"}
           </p>
         </div>
