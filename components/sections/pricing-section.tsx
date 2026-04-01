@@ -96,12 +96,14 @@ const plans = [
       },
     },
     highlight: true,
+    spotsLeft: "2자리 남았습니다",
   },
   {
     id: "premium",
     name: "프리미엄 플랜",
     subtitle: "매출 전환 밀착 관리",
     price: "1,000만 원",
+    spotsLeft: "1자리 남았습니다",
     features: [
       "부스트 플랜 + 커스터마이징 플랜 전체 포함",
       "3개월 매출 구조 설계 & 실행 로드맵 구축",
@@ -207,6 +209,15 @@ export function PricingSection() {
                   <p className="mb-4 text-base opacity-70">
                     : "{plan.subtitle}"
                   </p>
+                  
+                  {/* Spots Left Urgent Message */}
+                  {"spotsLeft" in plan && (
+                    <div className="mb-2 flex items-center gap-1.5 text-sm font-bold text-red-500">
+                      <span className="flex h-1.5 w-1.5 animate-pulse rounded-full bg-red-500" />
+                      {plan.spotsLeft}
+                    </div>
+                  )}
+
                   <p className="text-xl font-bold">{plan.price}</p>
                   
                   {/* Expand indicator */}
