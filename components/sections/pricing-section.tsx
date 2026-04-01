@@ -7,7 +7,7 @@ const plans = [
   {
     id: "starting",
     name: "부스트 플랜",
-    subtitle: "혼자 시작하는 구조 세팅",
+    subtitle: "수익화의 시작을 만드는 구조 세팅",
     price: "99만 원",
     features: [
       "AI 콘텐츠 기획/제작 자동화 패키지 제공",
@@ -21,7 +21,7 @@ const plans = [
   {
     id: "standard",
     name: "커스터마이징 플랜",
-    subtitle: "브랜드 SNS 체계 구축",
+    subtitle: "브랜드 맞춤형 SNS 성장 시스템 구축",
     price: "360만 원",
     overview: "총 8회 · 2개월 과정 / 주 1회 · 1시간 실시간 피드백 세션",
     features: [
@@ -101,7 +101,7 @@ const plans = [
   {
     id: "premium",
     name: "프리미엄 플랜",
-    subtitle: "매출 전환 밀착 관리",
+    subtitle: "매출 전환 구조 완성 및 초밀착 관리",
     price: "1,000만 원",
     spotsLeft: "1자리 남았습니다",
     features: [
