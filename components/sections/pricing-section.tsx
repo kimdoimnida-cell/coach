@@ -6,9 +6,9 @@ import { ChevronDown } from "lucide-react"
 const plans = [
   {
     id: "starting",
-    name: "스타팅 플랜",
+    name: "부스트 플랜",
     subtitle: "혼자 시작하는 구조 세팅",
-    price: "100만 원",
+    price: "99만 원",
     features: [
       "AI 콘텐츠 기획/제작 자동화 패키지 제공",
       "1대1 맞춤 상담 (50분)",
@@ -20,9 +20,9 @@ const plans = [
   },
   {
     id: "standard",
-    name: "부스트 플랜",
+    name: "커스터마이징 플랜",
     subtitle: "브랜드 SNS 체계 구축",
-    price: "320만 원",
+    price: "360만 원",
     overview: "총 8회 · 2개월 과정 / 주 1회 · 1시간 실시간 피드백 세션",
     features: [
       "브랜드 심층 진단",
@@ -103,7 +103,7 @@ const plans = [
     subtitle: "매출 전환 밀착 관리",
     price: "1,000만 원",
     features: [
-      "스타팅 플랜 + 부스트 플랜 전체 포함",
+      "부스트 플랜 + 커스터마이징 플랜 전체 포함",
       "3개월 매출 구조 설계 & 실행 로드맵 구축",
       "개인 브랜딩 포지셔닝 & 메시지 설계",
       "콘텐츠 → 전환 → 판매 흐름 설계",
@@ -112,7 +112,7 @@ const plans = [
       {
         title: "핵심 전략 & 시스템 구축",
         items: [
-          "스타팅 플랜 + 부스트 플랜 전체 포함",
+          "부스트 플랜 + 커스터마이징 플랜 전체 포함",
           "3개월 매출 구조 설계 & 실행 로드맵 구축",
           "개인 브랜딩 포지셔닝 & 메시지 설계",
           "콘텐츠 → 전환 → 판매 흐름 설계",
@@ -366,7 +366,7 @@ export function PricingSection() {
             Bonus
           </p>
           <p className="text-lg font-bold md:text-xl">
-            {"부스트 · 프리미엄 플랜 선택 시"}
+            {"커스터마이징 · 프리미엄 플랜 선택 시"}
           </p>
           <p className="mt-2 text-sm opacity-60">
             {"+ 90만 원 상당 실전 AI / 비즈니스 툴 패키지 제공"}
