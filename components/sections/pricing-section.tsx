@@ -19,6 +19,22 @@ const plans = [
     highlight: false,
   },
   {
+    id: "group",
+    name: "그룹 코칭 플랜",
+    subtitle: "다른 사람의 사례와 피드백을 내 계정에도 적용해보고 싶은 사람",
+    spotsLeft: "2자리 남았습니다",
+    price: "59만 원",
+    overview: "월 4회",
+    features: [
+      "주 1회씩 월 4회 라이브 코칭 (80분)",
+      "참여자별 시간 분배 후 순차 피드백 진행",
+      "개인 계정 기반 콘텐츠 및 방향 실시간 피드백",
+      "카카오톡 단체방 내 추가 피드백 및 질문 가능",
+      "와이엘지 미디어 디지털 상품 할인권 제공",
+    ],
+    highlight: false,
+  },
+  {
     id: "standard",
     name: "커스터마이징 플랜",
     subtitle: "브랜드 맞춤형 SNS 성장 시스템 구축",
@@ -179,8 +195,8 @@ export function PricingSection() {
           </p>
         </div>
 
-        {/* 3-Column Card Grid */}
-        <div className="grid gap-6 md:grid-cols-3">
+        {/* 4-Column Card Grid */}
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {plans.map((plan) => {
             const isExpanded = expandedPlan === plan.id
 
@@ -376,15 +392,7 @@ export function PricingSection() {
           })}
         </div>
 
-        {/* Group Coaching Plan */}
-        <div className="mt-12 border border-primary-foreground/10 bg-primary-foreground/5 p-8 text-center">
-          <p className="text-lg font-bold md:text-xl">
-            {"그룹 코칭 플랜"}
-          </p>
-          <p className="mt-2 text-sm opacity-60">
-            {": \"다른 사람의 사례와 피드백을 내 계정에도 적용해보고 싶은 사람\""}
-          </p>
-        </div>
+
       </div>
     </section>
   )
