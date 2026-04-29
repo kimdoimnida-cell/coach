@@ -7,8 +7,8 @@ const plans = [
   {
     id: "starting",
     name: "1대1 컨설팅 플랜",
-    subtitle: "수익화의 시작을 만드는 구조 세팅",
-    price: "59만 원(온라인) / 69만 원(오프라인)",
+    subtitle: "내 상황에 맞는 방향성 설정",
+    price: "59만 원",
     categories: [
       {
         title: "추천하는 사람 : \"내 상황에 맞게 정확하게 세팅하고 싶은 사람\"",
