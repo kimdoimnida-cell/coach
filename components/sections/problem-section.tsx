@@ -15,19 +15,22 @@ export function ProblemSection() {
 
         <div className="space-y-6 text-base leading-relaxed text-muted-foreground md:text-lg">
           <p>
-            {'광고비 의존도는 점점 높아지고, 퍼포먼스 마케팅 효율은 계속 떨어지는데, 정작 브랜드만의 색깔과 목소리는 만들어지지 않으니 방향성도 확신도 점점 흐려지고 계신가요?'}
+            {'지금 당신의 콘텐츠는 ‘전략’이 아니라 ‘반복’으로 만들어지고 있습니다.'}
+          </p>
+          <p>
+            {'그래서 올리긴 하는데 방향이 없고'}
+            <br />
+            {'조회수는 나오는데 전환이 없고'}
+            <br />
+            {'시간은 쓰는데 결과가 없습니다'}
           </p>
         </div>
 
         <div className="mt-16 border-t border-border pt-16">
-          <p className="mb-4 text-base text-muted-foreground md:text-lg">
-            {'이대로 가다간, 결국 광고비만 늘고 브랜드 정체성은 희미해집니다.'}
-          </p>
-          <p className="text-xl font-bold text-foreground md:text-2xl">
-            {'하지만 이건 당신의 문제가 아닙니다.'}
-          </p>
-          <p className="mt-2 text-xl font-bold text-foreground md:text-2xl">
-            {"단지 '팔리는 SNS 구조'를 모를 뿐입니다."}
+          <p className="text-xl font-bold leading-relaxed text-foreground md:text-2xl">
+            {'이대로라면 쌓이는 콘텐츠만큼'}
+            <br />
+            {'브랜드 이미지는 소모되어 갑니다.'}
           </p>
         </div>
       </div>
