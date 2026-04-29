@@ -36,7 +36,7 @@ const plans = [
   },
   {
     id: "standard",
-    name: "커스터마이징 플랜",
+    name: "프리미엄 플랜",
     subtitle: "브랜드 맞춤형 SNS 성장 시스템 구축",
     price: "360만 원",
     overview: "총 8회 · 2개월 과정 / 주 1회 · 1시간 실시간 피드백 세션",
@@ -116,12 +116,12 @@ const plans = [
   },
   {
     id: "premium",
-    name: "프리미엄 플랜",
+    name: "파트너쉽 플랜",
     subtitle: "매출 전환 구조 완성 및 초밀착 관리",
     price: "1,000만 원",
     spotsLeft: "1자리 남았습니다",
     features: [
-      "부스트 플랜 + 커스터마이징 플랜 전체 포함",
+      "1대1 컨설팅 플랜 + 프리미엄 플랜 전체 포함",
       "3개월 매출 구조 설계 & 실행 로드맵 구축",
       "개인 브랜딩 포지셔닝 & 메시지 설계",
       "콘텐츠 → 전환 → 판매 흐름 설계",
@@ -130,7 +130,7 @@ const plans = [
       {
         title: "핵심 전략 & 시스템 구축",
         items: [
-          "부스트 플랜 + 커스터마이징 플랜 전체 포함",
+          "1대1 컨설팅 플랜 + 프리미엄 플랜 전체 포함",
           "3개월 매출 구조 설계 & 실행 로드맵 구축",
           "개인 브랜딩 포지셔닝 & 메시지 설계",
           "콘텐츠 → 전환 → 판매 흐름 설계",
@@ -391,7 +391,10 @@ export function PricingSection() {
 
         {/* 3-Column Personal Card Grid */}
         <div className="grid gap-6 md:grid-cols-3">
-          {plans.filter(p => p.id !== "group").map(renderPlanCard)}
+          {["premium", "standard", "starting"]
+            .map(id => plans.find(p => p.id === id))
+            .filter(Boolean)
+            .map(renderPlanCard)}
         </div>
 
         {/* Group Plan Section */}
