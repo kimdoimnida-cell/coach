@@ -172,8 +172,10 @@ export function CaseStudiesSection() {
 
         <div className="mt-8 flex justify-end">
           <a
-            href="#"
-            className="group inline-flex items-center gap-2 text-sm font-medium text-brand transition-all hover:opacity-80"
+            href="https://sponge-cucumber-5a6.notion.site/34f644f66e5080dc8b6cd81e057f8ab3?pvs=74"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 bg-brand px-6 py-3 text-sm font-medium text-white transition-all hover:opacity-90"
           >
             {'더 많은 사례 보러가기'}
             <span className="transition-transform group-hover:translate-x-1">→</span>
