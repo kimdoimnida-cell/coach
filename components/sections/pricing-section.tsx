@@ -180,28 +180,10 @@ export function PricingSection() {
     setExpandedPlan(expandedPlan === planId ? null : planId)
   }
 
-  return (
-    <section className="bg-primary px-6 py-24 text-primary-foreground md:py-32">
-      <div className="mx-auto max-w-6xl">
-        <div className="mb-16 text-center">
-          <p className="mb-4 text-sm font-medium tracking-[0.2em] uppercase text-brand">
-            Pricing Plans
-          </p>
-          <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tight md:text-4xl">
-            {"나에게 맞는 플랜 선택하기"}
-          </h2>
-          <p className="mx-auto max-w-xl text-base leading-relaxed opacity-60">
-            {"브랜드 상황과 목표에 맞는 플랜을 선택하세요"}
-          </p>
-        </div>
-
-        {/* 4-Column Card Grid */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {plans.map((plan) => {
-            const isExpanded = expandedPlan === plan.id
-
-            return (
-              <div
+  const renderPlanCard = (plan: any) => {
+    const isExpanded = expandedPlan === plan.id;
+    return (
+<div
                 key={plan.id}
                 className={`relative flex flex-col overflow-hidden rounded-2xl transition-all shadow-xl ${
                   plan.highlight
@@ -388,8 +370,43 @@ export function PricingSection() {
                   </div>
                 </div>
               </div>
-            )
-          })}
+
+    );
+  };
+
+  return (
+    <section className="bg-primary px-6 py-24 text-primary-foreground md:py-32">
+      <div className="mx-auto max-w-6xl">
+        <div className="mb-16 text-center">
+          <p className="mb-4 text-sm font-medium tracking-[0.2em] uppercase text-brand">
+            Pricing Plans
+          </p>
+          <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tight md:text-4xl">
+            {"나에게 맞는 플랜 선택하기"}
+          </h2>
+          <p className="mx-auto max-w-xl text-base leading-relaxed opacity-60">
+            {"브랜드 상황과 목표에 맞는 플랜을 선택하세요"}
+          </p>
+        </div>
+
+        {/* 3-Column Personal Card Grid */}
+        <div className="grid gap-6 md:grid-cols-3">
+          {plans.filter(p => p.id !== "group").map(renderPlanCard)}
+        </div>
+
+        {/* Group Plan Section */}
+        <div className="mt-24">
+          <div className="mb-10 text-center">
+            <h3 className="mb-2 text-2xl font-bold tracking-tight md:text-3xl">
+              {"그룹 코칭 플랜"}
+            </h3>
+            <p className="mt-2 text-base font-light opacity-60">
+              {"소규모 그룹으로 밀도 있게 진행되는 실전 코칭"}
+            </p>
+          </div>
+          <div className="mx-auto max-w-sm md:max-w-md lg:max-w-lg">
+            {plans.filter(p => p.id === "group").map(renderPlanCard)}
+          </div>
         </div>
 
 
