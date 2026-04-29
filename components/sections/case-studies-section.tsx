@@ -169,6 +169,16 @@ export function CaseStudiesSection() {
             </div>
           ))}
         </div>
+
+        <div className="mt-8 flex justify-end">
+          <a
+            href="#"
+            className="group inline-flex items-center gap-2 text-sm font-medium text-brand transition-all hover:opacity-80"
+          >
+            {'더 많은 사례 보러가기'}
+            <span className="transition-transform group-hover:translate-x-1">→</span>
+          </a>
+        </div>
       </div>
     </section>
   )
