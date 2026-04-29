@@ -27,10 +27,13 @@ export function HeroSection() {
           <br />
           {'1:1 코칭 프로그램'}
         </h1>
-        <p className="mx-auto mb-12 max-w-xl text-lg leading-relaxed font-light opacity-80 md:text-xl">
+        <p className="mx-auto mb-4 max-w-xl text-lg leading-relaxed font-light opacity-80 md:text-xl">
           {'브랜드 정체성을 명확히 하고,'}
           <br />
-          {'SNS를 매출 구조로 전환하는 프리미엄 코칭'}
+          {'콘텐츠를 매출 수단으로 전환하는 코칭 프로그램'}
+        </p>
+        <p className="mx-auto mb-12 max-w-xl text-sm leading-relaxed font-light opacity-60 md:text-base">
+          {'* 기존 고객들의 변화는 아래에서 확인하실 수 있습니다'}
         </p>
         <a
           href="http://pf.kakao.com/_lxkxjXG"
