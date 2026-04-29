@@ -23,9 +23,7 @@ export function HeroSection() {
           Premium 1:1 Coaching
         </p>
         <h1 className="mb-8 text-4xl font-black leading-tight tracking-tight text-balance md:text-6xl lg:text-7xl">
-          {'브랜드 SNS 운영'}
-          <br />
-          {'1:1 코칭 프로그램'}
+          {'브랜드 리셋 코칭 프로그램'}
         </h1>
         <p className="mx-auto mb-4 max-w-xl text-lg leading-relaxed font-light opacity-80 md:text-xl">
           {'브랜드 정체성을 명확히 하고,'}
