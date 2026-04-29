@@ -376,16 +376,13 @@ export function PricingSection() {
           })}
         </div>
 
-        {/* Bonus Note */}
+        {/* Group Coaching Plan */}
         <div className="mt-12 border border-primary-foreground/10 bg-primary-foreground/5 p-8 text-center">
-          <p className="mb-2 text-xs font-medium tracking-wider uppercase text-brand">
-            Bonus
-          </p>
           <p className="text-lg font-bold md:text-xl">
-            {"커스터마이징 · 프리미엄 플랜 선택 시"}
+            {"그룹 코칭 플랜"}
           </p>
           <p className="mt-2 text-sm opacity-60">
-            {"+ 90만 원 상당 실전 AI / 비즈니스 툴 패키지 제공"}
+            {": \"다른 사람의 사례와 피드백을 내 계정에도 적용해보고 싶은 사람\""}
           </p>
         </div>
       </div>
